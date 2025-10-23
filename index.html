@@ -91,17 +91,18 @@
     </section>
 
     <!-- DONATION & QR CODE BLOCK -->
-    <div class="max-w-4xl mx-auto px-6 py-8 md:py-12">
-        <div class="flex flex-col md:flex-row items-center justify-between bg-yellow-100 p-6 rounded-xl shadow-2xl border-l-8 border-amber-600">
+    <div class="max-w-4xl mx-auto px-6 py-8 md:pt-12 md:pb-8">
+        <!-- Background changed to bg-white, border changed to border-orange-600, text/button colors harmonized with orange scale -->
+        <div class="flex flex-col md:flex-row items-center justify-between bg-white p-6 rounded-xl shadow-2xl border-l-8 border-orange-600">
             <div class="text-center md:text-left mb-4 md:mb-0">
-                <h5 class="text-2xl font-bold text-amber-800 mb-2">Support the Mahaparv</h5>
+                <h5 class="text-2xl font-bold text-orange-800 mb-2">Support the Mahaparv</h5>
                 <p class="text-gray-700">Your generous donations help cover the costs of the venue, decorations, and community dinner for the celebration.</p>
-                <a href="https://betaalverzoek.rabobank.nl/betaalverzoek/?id=HeZ0kn2RQCuDEhvQSBtvaw" target="_blank" class="inline-block mt-3 px-6 py-3 bg-amber-600 text-white font-bold rounded-lg shadow-lg hover:bg-amber-700 transition duration-300 transform hover:scale-105">
+                <a href="https://betaalverzoek.rabobank.nl/betaalverzoek/?id=HeZ0kn2RQCuDEhvQSBtvaw" target="_blank" class="inline-block mt-3 px-6 py-3 bg-orange-600 text-white font-bold rounded-lg shadow-lg hover:bg-orange-700 transition duration-300 transform hover:scale-105">
                     Donate Now &rarr;
                 </a>
             </div>
             <div class="text-center">
-                <!-- FIX: Switched to api.qrserver.com for better visibility/compatibility -->
+                <!-- QR Code for Tikkie Donation -->
                 <img 
                     src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://betaalverzoek.rabobank.nl/betaalverzoek/?id=HeZ0kn2RQCuDEhvQSBtvaw" 
                     alt="Donation QR Code" 
@@ -113,6 +114,30 @@
         </div>
     </div>
     <!-- END DONATION & QR CODE BLOCK -->
+
+    <!-- WHATSAPP GROUP BLOCK -->
+    <div class="max-w-4xl mx-auto px-6 pb-12 md:pb-16">
+        <div class="flex flex-col md:flex-row items-center justify-between bg-teal-50 p-6 rounded-xl shadow-2xl border-l-8 border-teal-600">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h5 class="text-2xl font-bold text-teal-800 mb-2">Join the Community on WhatsApp</h5>
+                <p class="text-gray-700">Stay up-to-date with event logistics, cultural programs, and connect with fellow devotees.</p>
+                <a href="https://chat.whatsapp.com/IGZ45Uviylk0Ij4UjsMEgR?mode=wwt" target="_blank" class="inline-block mt-3 px-6 py-3 bg-teal-600 text-white font-bold rounded-lg shadow-lg hover:bg-teal-700 transition duration-300 transform hover:scale-105">
+                    Join WhatsApp Group &rarr;
+                </a>
+            </div>
+            <div class="text-center">
+                <!-- QR Code for WhatsApp Group -->
+                <img 
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://chat.whatsapp.com/IGZ45Uviylk0Ij4UjsMEgR?mode=wwt" 
+                    alt="WhatsApp Group QR Code" 
+                    class="w-40 h-40 md:w-48 md:h-48 border-4 border-white rounded-lg shadow-xl"
+                    onerror="this.style.display='none'; this.nextElementSibling.textContent='QR Code not loading. Please use the Join WhatsApp Group button above.'"
+                >
+                <p class="text-sm text-gray-600 mt-1">Scan to Join</p>
+            </div>
+        </div>
+    </div>
+    <!-- END WHATSAPP GROUP BLOCK -->
 
     <!-- Day-Wise Schedule -->
     <section id="schedule" class="py-16 md:py-24 max-w-6xl mx-auto px-6">
@@ -139,7 +164,7 @@
                     </a>
                 </div>
                 <div class="text-center">
-                    <!-- FIX: Switched to api.qrserver.com for better visibility/compatibility -->
+                    <!-- QR Code for Registration -->
                     <img 
                         src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://docs.google.com/forms/d/e/1FAIpQLSdtNkfBhNuXG7EpbV6EQ-R8y_g3P3Z18AgE-Zm4Sp95vDHeWg/viewform" 
                         alt="Registration QR Code" 
