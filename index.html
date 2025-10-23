@@ -95,15 +95,17 @@
             <div class="text-center md:text-left mb-4 md:mb-0">
                 <h5 class="text-2xl font-bold text-amber-800 mb-2">Support the Mahaparv</h5>
                 <p class="text-gray-700">Your generous donations help cover the costs of the venue, decorations, and community dinner for the celebration.</p>
-                <a href="https://betaalverzoek.rabobank.nl/betaalverzoek/?id=HeZ0kn2RQCuDEhvQSBtvaw." target="_blank" class="inline-block mt-3 px-6 py-3 bg-amber-600 text-white font-bold rounded-lg shadow-lg hover:bg-amber-700 transition duration-300 transform hover:scale-105">
+                <a href="https://betaalverzoek.rabobank.nl/betaalverzoek/?id=HeZ0kn2RQCuDEhvQSBtvaw" target="_blank" class="inline-block mt-3 px-6 py-3 bg-amber-600 text-white font-bold rounded-lg shadow-lg hover:bg-amber-700 transition duration-300 transform hover:scale-105">
                     Donate Now &rarr;
                 </a>
             </div>
             <div class="text-center">
+                <!-- FIX: Switched to api.qrserver.com for better visibility/compatibility -->
                 <img 
-                    src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://betaalverzoek.rabobank.nl/betaalverzoek/?id=HeZ0kn2RQCuDEhvQSBtvaw." 
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://betaalverzoek.rabobank.nl/betaalverzoek/?id=HeZ0kn2RQCuDEhvQSBtvaw" 
                     alt="Donation QR Code" 
-                    class="w-32 h-32 md:w-40 md:h-40 border-4 border-white rounded-lg shadow-xl"
+                    class="w-40 h-40 md:w-48 md:h-48 border-4 border-white rounded-lg shadow-xl"
+                    onerror="this.style.display='none'; this.nextElementSibling.textContent='QR Code not loading. Please use the Donate Now button above.'"
                 >
                 <p class="text-sm text-gray-600 mt-1">Scan for Tikkie Donation</p>
             </div>
@@ -134,10 +136,12 @@
                     </a>
                 </div>
                 <div class="text-center">
+                    <!-- FIX: Switched to api.qrserver.com for better visibility/compatibility -->
                     <img 
-                        src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://docs.google.com/forms/d/e/1FAIpQLSdtNkfBhNuXG7EpbV6EQ-R8y_g3P3Z18AgE-Zm4Sp95vDHeWg/viewform" 
+                        src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://docs.google.com/forms/d/e/1FAIpQLSdtNkfBhNuXG7EpbV6EQ-R8y_g3P3Z18AgE-Zm4Sp95vDHeWg/viewform" 
                         alt="Registration QR Code" 
-                        class="w-32 h-32 md:w-40 md:h-40 border-4 border-white rounded-lg shadow-xl"
+                        class="w-40 h-40 md:w-48 md:h-48 border-4 border-white rounded-lg shadow-xl"
+                        onerror="this.style.display='none'; this.nextElementSibling.textContent='QR Code not loading. Please use the Register Here Now button above.'"
                     >
                     <p class="text-sm text-gray-600 mt-1">Scan to register</p>
                 </div>
